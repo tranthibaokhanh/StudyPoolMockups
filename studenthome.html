@@ -1,0 +1,637 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>
+	Home
+</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="/public/css/main.css" rel="stylesheet" type="text/css" media="all"/>
+        <style>
+            body {
+                
+                background-color: #ededed;
+                
+                padding-top: 50px;
+                font-family: Avenir, 'Avenir LT', 'Nunito';
+            }
+        </style>
+        <!-- TODO: Complete this project :) -->
+    </head>
+    <body>
+        <div class="navbar-header navbar navbar-inverse navbar-fixed-top">
+    <div class="container top">
+        <div class="new-collapse">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+            <a class="navbar-brand" href="/">
+              <img class="logo" src="https://studypool-likepluminc.netdna-ssl.com/pictures/logo2.png" style="width:73px;">
+              <img class="logo" src="https://studypool-likepluminc.netdna-ssl.com/pictures/studypool-big.png" id="logo-text">
+            </a>
+            
+            <ul class="nav navbar-nav upp">
+              <li class="dropdown" style="padding-left: 0em;padding-right: 0em;">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-comment"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <div class="menu-inside">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <div style="width: 50%; height: 20px;">
+                        <p style="position: absolute; left: 7px; top: 7px; font-size:12px; font-weight:600; width:200px;">
+                        <span id="inbox_inbox">Inbox </span>
+                        <span id="inbox_requests" style="color:grey; margin-left:5px; font-weight:400;">Requests (Same, css changes)</span>
+                        </p>
+                        </div>
+                      </div>
+                      <div class="panel-body">
+                        Panel content
+                      </div>
+                      <div class="panel-footer">
+                        See all messages
+                      </div>
+                    </div>
+                  </div>
+                </ul>
+              </li>
+              <li class="dropdown" style="padding-left: 0em;padding-right: 0em;">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-globe"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <div class="menu-inside">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title">Same(Css changes)</h3>
+                      </div>
+                      <div class="panel-body">
+                        Panel content
+                      </div>
+                      <div class="panel-footer">
+                        Panel footer
+                      </div>
+                    </div>
+                  </div>
+                </ul>
+              </li>
+              <li class="dropdown" style="padding-left: 0em;padding-right: 0em;">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-usd"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <div class="menu-inside">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title">Payment</h3>
+                      </div>
+                      <div class="panel-body">
+                        Panel content
+                      </div>
+                      <div class="panel-footer" style="color: #434343;">
+                        <span class="glyphicon glyphicon-stats"></span> Balance : $0.00
+                        <br>
+                        <span class="glyphicon glyphicon-download-alt"></span> Pending : $0.00
+                      </div>
+                    </div>
+                  </div>
+                </ul>
+              </li>
+            </ul>
+            
+            <ul class="nav navbar-nav navbar-right">
+              
+                <li class="dropdown" id="learn">
+                    <a class="dropdown-toggle" type="button" id="dropdownMenu2" data-toggle="dropdown" aria-expanded="true">
+                    Ask
+                    </a>
+                    <ul class="dropdown-menu" id="down-content" role="menu" aria-labelledby="dropdownMenu2">
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.studypool.com/free/create?new">
+                      <img src="https://www.studypool.com/pictures/SilverLightning.png" style="width:18px;">
+                      Easy Question
+                      </a></li>
+                      <li role="presentation"><a role="menuitem" tabindex="-1" href="https://www.studypool.com/questions/create">
+                      <img src="https://www.studypool.com/pictures/Silver.png" style="width:18px; margin-top:-3px;">
+                      Paid Question
+                      </a></li>
+                    </ul>
+                </li>
+              
+                <li id="learn">
+                  
+                  <a href="https://www.studypool.com/questions/newest">
+                    Questions
+                  </a>
+                  
+                </li>
+                <li id="login"><a  href="/studenthome" >
+                 
+                  username
+                
+                </a></li>
+                <li class="active"  id="down" >
+                  
+                    <div class="dropdown">
+                      <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                        <span class="glyphicon glyphicon-circle-arrow-down">
+                      </a>
+                      <ul class="dropdown-menu" id="down-content" role="menu" aria-labelledby="dropdownMenu1">
+                        <li role="presentation" style="color: black;">Add the needed lines</li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">
+                        <span class="glyphicon glyphicon-list"></span>
+                        Account Settings
+                        </a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">
+                        <span class="glyphicon glyphicon-question-sign"></span>
+                        Learn more</a>
+                        </li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">
+                        <span class="glyphicon glyphicon-comment"></span>
+                        Contact Us</a>
+                        </li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">
+                        <span class="glyphicon glyphicon-off"></span>
+                        Logout</a>
+                        </li>
+                      </ul>
+                    </div>
+                  
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Balance popover -->
+<div id="balance_content_wrapper" style="display: none">
+  <div class="row highlight align">
+    <h4>Balance</h4>
+  </div>
+  <div class="row highlight align">
+    <h4>Pending</h4>
+  </div>
+</div>
+
+<!-- Login modal -->
+<div class="modal fade" id="myLogin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Login to StudyPool</h4>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-2 col-sm-offset-1">
+              <a href="studenthome"> Login as Student </a>
+            </div>
+            <div class="col-sm-2">
+              <a href="tutorhome"> Login as Tutor </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SignUp modal -->
+<div class="modal fade" id="mySignUp" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Login to StudyPool</h4>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <form class="form-signin">
+            <h2 class="form-signin-heading">Please sign in (css changes)</h2>
+            <label for="inputEmail" class="sr-only">Email address</label>
+            <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
+            <label for="inputPassword" class="sr-only">Password</label>
+            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="remember-me"> Remember me
+              </label>
+            </div>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+        <div class="container-fluid main">
+            
+<div class="container" style="height:100vh;
+  background-color: white;
+  width: 76%;">
+	<div class="row" style="margin-top: 2em;">
+		<div class="col-sm-3" style="margin-left: 1em; border-right: solid 1px #ededed;">
+			<div class="row highlight" style="height: 7.8em;">
+				<div class="col-sm-6">
+					<img id="profile-pic" src="https://fbcdn-profile-a.akamaihd.net/hprofile-ak-xfp1/v/t1.0-1/p148x148/10888540_912375642129090_8698859733722436635_n.jpg?oh=14f1a3f9349d654bb255717b910db604&oe=559ED3C6&__gda__=1436563629_c8521fbcb3a81359b303a1cf8529f456">
+				</div>
+				<div class="col-sm-6">
+					<h4 id="nick">Khanh Tran</h4>
+					<div class="hoverable-div">
+						<a href="#" id="btn1" class="hoverable" data-toggle="popover" title="" data-content="Become a gold member by asking and paying for 3 question." data-original-title="Basic Member">Status</a> : New
+						<br>
+						<a href="#" id="btn2" class="hoverable" data-toggle="popover" title="" data-content="Your reputation is important. Eran points by paying for questions." data-original-title="Reputation">Reputation</a> : 17
+					</div>
+				</div>
+			</div>
+			<br>
+			<a class="qw" href="https://www.studypool.com/user/profile/myquestions">
+			<div class="row highlight align">
+				<h4><span class="glyphicon glyphicon-folder-open"></span>   My Questions <span class="badge" style="background-color: #cccccc;">10</span></h4>
+			</div>
+			</a>
+			<a class="qw" data-toggle="modal" data-target="#myTutors">
+			<div class="row highlight align">
+				<h4><span class="glyphicon glyphicon-user"></span>  My Tutors</h4>
+			</div>
+			</a>
+			<a class="qw" href="https://www.studypool.com/user/user/find">
+			<div class="row highlight align">
+				<h4><span class="glyphicon glyphicon-search"></span>  Browse Tutors</h4>
+			</div>
+			</a>
+			<hr>
+			<div class="row highlight align">
+				<a data-toggle="modal" data-target="#myBalance">
+				<h6><span class="glyphicon glyphicon-stats"></span> Balance : $0.00</h6>
+				</a>
+			</div>
+			<div class="row highlight align">
+				<a data-toggle="modal" data-target="#myPending">
+				<h6><span class="glyphicon glyphicon-download-alt"></span> Pending : $0.00</h6>
+				</a>
+			</div>
+			<hr>
+			<div class="row highlight align">
+				<a href="https://www.studypool.com/site/upgrade"><h6><span class="glyphicon glyphicon-star-empty"></span> Membership</h6></a>
+			</div>
+			<div class="row highlight align">
+				<a data-toggle="modal" data-target="#myPromo">
+				<h6><span class="glyphicon glyphicon-heart-empty"></span> Promotion</h6>
+				</a>
+			</div>
+		</div>
+		<div class="col-sm-8 question-banner">
+			<div id="asker_buttons" style="margin-bottom:20px; background: #f6f6f6;padding:10px 0px 15px 0px; width:100%;">
+				<h2 style="margin-top: 0em;">Ask a Question!</h2>
+
+				<a class="btn btn-default" id="EQ" href="https://www.studypool.com/free/create?new" style="display:inline-block; height:163px; width:157px; margin-left:5px;">
+
+					<img src="https://studypool-likepluminc.netdna-ssl.com/pictures/lightning4.png" style="width:64px; margin-top:4px;">
+
+				<p class="qbox_title" style="font-size: 16px; margin-top: 5px; color: rgb(49, 80, 108);"><b>Easy Question</b></p>
+
+				<p style="font-size:11px; margin-top:-4px; line-height:140%;"><i>Free! Get fast help to <br>easy questions. <br>500 characters limit.</i></p>
+				</a>
+
+				<a class="btn btn-default" id="HQ" href="https://www.studypool.com/questions/create" style="display:inline-block; height:163px; width:157px;">
+					<img src="https://studypool-likepluminc.netdna-ssl.com/pictures/Dar4.png" style="width:64px; margin-top:4px;">
+
+				<p class="qbox_title" style="font-size: 16px; margin-top: 5px; color: rgb(49, 80, 108);"><b>Paid Question</b></p>
+
+				<i><p style="font-size:11px; margin-top:-4px; line-height:140%; ">Pay for quality help from
+				<br>
+				verified tutors. Encrypted 
+				<br>
+				privacy options.</p></i>
+				</a>
+
+				<a class="btn btn-default" id="FT" data-toggle="modal" data-target="#myTutors" style="display:inline-block; height:163px; width:157px;">
+					<img src="https://www.studypool.com/pictures/tutor_icon_mini_orange.png" style="width:64px; margin-top:4px;">
+					<p class="qbox_title" style="font-size: 16px; margin-top: 5px; color: rgb(49, 80, 108);"><b>Ask Your Tutors</b></p>
+					<p style="font-size:11px;margin-top:-4px; line-height:140%;"><i>Ask your tutors <br>a private question.</i></p>
+				</a>
+			</div>
+            (for paid - (ADD TUTORS TO THE QUESTION))
+            <br>
+			Your Question feed. (Need a bit more information. For now the delivery of questions look reasonable.)
+			(However, no need to indicate budget range, just the number of bids.)
+
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title">Question</h3>
+              </div>
+              <div class="panel-body">
+                <a href="questionstudent"> Example question link</a>
+              </div>
+            </div>
+		</div>
+	</div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="myBalance" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <h3 style="font-size:22px; margin-top:12px; margin-bottom:3px;"><img style="margin-top:-5px; margin-right:2px;" src="https://www.studypool.com/pictures/sidebar/balance.png" width="32"> Your Studypool Balance</h3>
+        <br>
+        <br>
+        <p style="font-size:14px;">You currently have a balance of <b>$0.00</b>. </p>
+        <p style="font-size:14px;">Your studypool balance can be used to pay for questions.</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="myPending" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-body">
+        <h3 style="font-size:22px; margin-top:12px; margin-bottom:3px;"><img style="margin-top:-5px; margin-right:2px;" src="https://www.studypool.com/pictures/sidebar/pending.png" width="32"> Your Pending Balance</h3>
+        <br>
+        <br>
+        <p style="font-size:14px;">You have a pending balance of <b>$0</b>. </p>
+        <p style="font-size:14px;">Studypool will hold your pending balance securely. We will only release it to the tutors after you receive satisfactory work. <a href="https://www.studypool.com/downpayment" target="_blank">Learn more</a></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="myPromo" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+    	<div class="modal-header" style="color:#31506c; padding-top:6px; padding-bottom:6px; text-align:left; padding-left:14px;">
+		<h3 style="font-size:22px; margin-top:12px; text-align:center; margin-bottom:3px;">Claim Your Promo Code!
+
+		<a style="float:right; margin-right:10px; font-size:28px; font-weight:bold; color: black; display:block;" onclick="close_referral_popup(); return false;" href="#">X</a>
+		</h3>
+
+		</div>
+      <div class="modal-body" style="float:none; margin-bottom:15px; max-height:210px;">
+		<div class="alert alert-danger error_verify" style="display:none;">
+			Error
+		</div>
+
+		<div class="alert alert-success success_verify" style="display:none;">
+			You've received <b>$10.00</b> in your balance.
+		</div>
+
+		<div style="text-align:center;" class="before_verify">
+			<input id="v_promo" name="v_promo" style="width:200px; font-weight:bold;" placeholder="Promotional Code" maxlength="25">
+			<a href="#" onclick="submitpromo(); return false;" style="margin-top:-10px; width:60px; margin-left:5px;" class="btn go-btn go-btn-primary">Submit</a>
+		</div>
+		<hr>
+
+		<h3 style="color:#31506c; text-align:center; ">
+		<img src="/pictures/usc/heart.png" style="width:26px; margin-left:4px; margin-top:-3px; "> Share Studypool, Get Free Questions
+
+		</h3>
+
+		<div style="text-align:center; margin-top:5px; margin-bottom:-15px;">
+
+
+		<p style="margin-bottom:10px;">Each time you share your promo code: <b style="color:#08c;">simply_khanh</b> or link: <b style="color:#08c;">studypool.com?aid=simply_khanh</b> with friends, they get <b style="color:green; font-size:15px;">$10 Free</b>. Once they've tried Studypool you'll  get <b style="color:green; font-size:15px;">$10 balance</b>.</p>
+
+
+		<div class="addthis_custom_sharing" style="margin-left:205px; margin-bottom:10px; -webkit-transform:scale(0.8);" data-url="https://www.studypool.com?aid=simply_khanh" data-title="Get the best online homework help at Studypool"><div id="atstbx2" class="at-share-tbx-element at-white-icons addthis_32x32_style addthis-smartlayers addthis-animated at4-show"><a class="at-32x32 at-custom-share-anchor at-share-btn at-svc-facebook"><span class="at-custom-share-span at-custom-button-color at-32x32 at-circular "><span class="at4-icon aticon-facebook at-32x32" title="Facebook"></span></span></a><a class="at-32x32 at-custom-share-anchor at-share-btn at-svc-twitter"><span class="at-custom-share-span at-custom-button-color at-32x32 at-circular "><span class="at4-icon aticon-twitter at-32x32" title="Twitter"></span></span></a><a class="at-32x32 at-custom-share-anchor at-share-btn at-svc-reddit"><span class="at-custom-share-span at-custom-button-color at-32x32 at-circular "><span class="at4-icon aticon-reddit at-32x32" title="Reddit"></span></span></a></div></div>
+		</div>
+
+
+			<div style="text-align:center; margin-top:20px; display:none;">
+				<h3 style="color:#31506c; text-align:center; margin-bottom:15px;">Holiday Contest</h3>
+				<img src="/pictures/oculusrift.png" style="width:150px; margin-top:-5px;">
+				<a href="http://youtu.be/-y6N4dNpnok" target="_blank" style="font-size:32px; font-weight:bold;"> / Video</a>
+				<p style="padding-left:15px; padding-right:15px; margin-top:5px;">Share Studypool with the most friends &amp; win the totally awesome <a href="http://youtu.be/-y6N4dNpnok" target="_blank" style="font-size:15px; font-weight:bold;">Oculus Rift</a>, featured on <br><a target="_blank" href="http://southpark.cc.com/full-episodes/s18e07-grounded-vindaloop#source=2b6c5ab4-d717-4e84-9143-918793a3b636:63a32034-1ea6-492d-b95b-9433e3f62f8d&amp;position=4&amp;sort=airdate"><b>South Park</b></a>.  The <b style="color:green; font-size:15px;">top 3 students</b> will <b>win</b>. Contest is open between <b>Dec 13 - Dec 23.</b></p>
+			</div>
+		</div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- My Tutors Modal -->
+<div class="modal fade" id="myTutors" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog tutor-modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">My Tutors</h4>
+      </div>
+      <div class="modal-body">
+        <div class="container-fluid">
+            <h6> Select Tutors you want to ask your question. Then redirect to a Paid question ask page(with already indicated selected tutors)</h6>
+        	<div class="row">
+        		<div class="col-sm-4 hey">
+        			<div class="col-sm-6">
+        			<img src="http://mcpn.org/wp-content/uploads/2015/01/staff-placeholder-female.jpg" style="width:100%; margin-top: 0.2em;">
+        			</div>
+        			<div class="col-sm-6">
+        				<a href="https://www.studypool.com/user/user/view/id/112683?cid=-1"> username</a>
+        				<br>
+        				<span class="glyphicon glyphicon-star-empty"></span><span class="glyphicon glyphicon-star-empty"></span><span class="glyphicon glyphicon-star-empty"></span>
+        				Specialties
+        				<br>
+        				<br>
+        				<br>
+        				<p class="pull-right">Select <input type="checkbox"></p>
+        			</div>
+        		</div>
+        		<div class="col-sm-4 hey">
+        			<div class="col-sm-6">
+        			<img src="http://mcpn.org/wp-content/uploads/2015/01/staff-placeholder-female.jpg" style="width:100%; margin-top: 0.2em;">
+        			</div>
+        			<div class="col-sm-6">
+        				<a href="https://www.studypool.com/user/user/view/id/112683?cid=-1"> username</a>
+        				<br>
+        				<span class="glyphicon glyphicon-star-empty"></span><span class="glyphicon glyphicon-star-empty"></span><span class="glyphicon glyphicon-star-empty"></span>
+        				Specialties
+        				<br>
+        				<br>
+        				<br>
+        				<p class="pull-right">Select <input type="checkbox"></p>
+        			</div>
+        		</div>
+        		<div class="col-sm-4 hey">
+        			<div class="col-sm-6">
+        			<img src="http://mcpn.org/wp-content/uploads/2015/01/staff-placeholder-female.jpg" style="width:100%; margin-top: 0.2em;">
+        			</div>
+        			<div class="col-sm-6">
+        				<a href="https://www.studypool.com/user/user/view/id/112683?cid=-1"> username</a>
+        				<br>
+        				<span class="glyphicon glyphicon-star-empty"></span><span class="glyphicon glyphicon-star-empty"></span><span class="glyphicon glyphicon-star-empty"></span>
+        				Specialties
+        				<br>
+        				<br>
+        				<br>
+        				<p class="pull-right">Select <input type="checkbox"></p>
+        			</div>
+        		</div>
+        	</div>
+        	<div class="row">
+        		<div class="col-sm-4 hey">
+         			<div class="col-sm-6">
+        			<img src="http://mcpn.org/wp-content/uploads/2015/01/staff-placeholder-female.jpg" style="width:100%; margin-top: 0.2em;">
+        			</div>
+        			<div class="col-sm-6">
+        				<a href="https://www.studypool.com/user/user/view/id/112683?cid=-1"> username</a>
+        				<br>
+        				<span class="glyphicon glyphicon-star-empty"></span><span class="glyphicon glyphicon-star-empty"></span><span class="glyphicon glyphicon-star-empty"></span>
+        				Specialties
+        				<br>
+        				<br>
+        				<br>
+        				<p class="pull-right">Select <input type="checkbox"></p>
+        			</div>
+        		</div>
+        		<div class="col-sm-4 hey">
+        			<div class="col-sm-6">
+        			<img src="http://mcpn.org/wp-content/uploads/2015/01/staff-placeholder-female.jpg" style="width:100%; margin-top: 0.2em;">
+        			</div>
+        			<div class="col-sm-6">
+        				<a href="https://www.studypool.com/user/user/view/id/112683?cid=-1"> username</a>
+        				<br>
+        				<span class="glyphicon glyphicon-star-empty"></span><span class="glyphicon glyphicon-star-empty"></span><span class="glyphicon glyphicon-star-empty"></span>
+        				Specialties
+        				<br>
+        				<br>
+        				<br>
+        				<p class="pull-right">Select <input type="checkbox"></p>
+        			</div>
+        		</div>
+        		<div class="col-sm-4 hey">
+        			<div class="col-sm-6">
+        			<img src="http://mcpn.org/wp-content/uploads/2015/01/staff-placeholder-female.jpg" style="width:100%; margin-top: 0.2em;">
+        			</div>
+        			<div class="col-sm-6">
+        				<a href="https://www.studypool.com/user/user/view/id/112683?cid=-1"> username</a>
+        				<br>
+        				<span class="glyphicon glyphicon-star-empty"></span><span class="glyphicon glyphicon-star-empty"></span><span class="glyphicon glyphicon-star-empty"></span>
+        				Specialties
+        				<br>
+        				<br>
+        				<br>
+        				<p class="pull-right">Select <input type="checkbox"></p>
+        			</div>
+        		</div>
+        	</div>
+        	<div class="row">
+        		<div class="col-sm-4 hey">
+         			<div class="col-sm-6">
+        			<img src="http://mcpn.org/wp-content/uploads/2015/01/staff-placeholder-female.jpg" style="width:100%; margin-top: 0.2em;">
+        			</div>
+        			<div class="col-sm-6">
+        				<a href="https://www.studypool.com/user/user/view/id/112683?cid=-1"> username</a>
+        				<br>
+        				<span class="glyphicon glyphicon-star-empty"></span><span class="glyphicon glyphicon-star-empty"></span><span class="glyphicon glyphicon-star-empty"></span>
+        				Specialties
+        				<br>
+        				<br>
+        				<br>
+        				<p class="pull-right">Select <input type="checkbox"></p>
+        			</div>
+        		</div>
+        		<div class="col-sm-4 hey">
+        			<div class="col-sm-6">
+        			<img src="http://mcpn.org/wp-content/uploads/2015/01/staff-placeholder-female.jpg" style="width:100%; margin-top: 0.2em;">
+        			</div>
+        			<div class="col-sm-6">
+        				<a href="https://www.studypool.com/user/user/view/id/112683?cid=-1"> username</a>
+        				<br>
+        				<span class="glyphicon glyphicon-star-empty"></span><span class="glyphicon glyphicon-star-empty"></span><span class="glyphicon glyphicon-star-empty"></span>
+        				Specialties
+        				<br>
+        				<br>
+        				<br>
+        				<p class="pull-right">Select <input type="checkbox"></p>
+        			</div>
+        		</div>
+        		<div class="col-sm-4 hey">
+        			<div class="col-sm-6">
+        			<img src="http://mcpn.org/wp-content/uploads/2015/01/staff-placeholder-female.jpg" style="width:100%; margin-top: 0.2em;">
+        			</div>
+        			<div class="col-sm-6">
+        				<a href="https://www.studypool.com/user/user/view/id/112683?cid=-1"> username</a>
+        				<br>
+        				<span class="glyphicon glyphicon-star-empty"></span><span class="glyphicon glyphicon-star-empty"></span><span class="glyphicon glyphicon-star-empty"></span>
+        				Specialties
+        				<br>
+        				<br>
+        				<br>
+        				<p class="pull-right">Select <input type="checkbox"></p>
+        			</div>
+        		</div>
+        	</div>
+        	<div class="row">
+        		<div class="col-sm-4 hey">
+         			<div class="col-sm-6">
+        			<img src="http://mcpn.org/wp-content/uploads/2015/01/staff-placeholder-female.jpg" style="width:100%; margin-top: 0.2em;">
+        			</div>
+        			<div class="col-sm-6">
+        				<a href="https://www.studypool.com/user/user/view/id/112683?cid=-1"> username</a>
+        				<br>
+        				<span class="glyphicon glyphicon-star-empty"></span><span class="glyphicon glyphicon-star-empty"></span><span class="glyphicon glyphicon-star-empty"></span>
+        				Specialties
+        				<br>
+        				<br>
+        				<br>
+        				<p class="pull-right">Select <input type="checkbox"></p>
+        			</div>
+        		</div>
+        		<div class="col-sm-4 hey">
+        			<div class="col-sm-6">
+        			<img src="http://mcpn.org/wp-content/uploads/2015/01/staff-placeholder-female.jpg" style="width:100%; margin-top: 0.2em;">
+        			</div>
+        			<div class="col-sm-6">
+        				<a href="https://www.studypool.com/user/user/view/id/112683?cid=-1"> username</a>
+        				<br>
+        				<span class="glyphicon glyphicon-star-empty"></span><span class="glyphicon glyphicon-star-empty"></span><span class="glyphicon glyphicon-star-empty"></span>
+        				Specialties
+        				<br>
+        				<br>
+        				<br>
+        				<p class="pull-right">Select <input type="checkbox"></p>
+        			</div>
+        		</div>
+        		<div class="col-sm-4 hey">
+        			<div class="col-sm-6">
+        			<img src="http://mcpn.org/wp-content/uploads/2015/01/staff-placeholder-female.jpg" style="width:100%; margin-top: 0.2em;">
+        			</div>
+        			<div class="col-sm-6">
+        				<a href="https://www.studypool.com/user/user/view/id/112683?cid=-1"> username</a>
+        				<br>
+        				<span class="glyphicon glyphicon-star-empty"></span><span class="glyphicon glyphicon-star-empty"></span><span class="glyphicon glyphicon-star-empty"></span>
+        				Specialties
+        				<br>
+        				<br>
+        				<br>
+        				<p class="pull-right">Select <input type="checkbox"></p>
+        			</div>
+        		</div>
+        	</div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <a href="https://www.studypool.com/questions/create"><button class="btn btn-primary">Ask Selected</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+        </div>
+        <script src="//code.jquery.com/jquery.min.js"></script>
+        <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="/public/js/main.min.js"></script>
+    </body>
+</html>

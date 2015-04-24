@@ -1,0 +1,368 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>
+	Question (Student)
+</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="/public/css/main.css" rel="stylesheet" type="text/css" media="all"/>
+        <style>
+            body {
+                
+                background-color: #ededed;
+                
+                padding-top: 50px;
+                font-family: Avenir, 'Avenir LT', 'Nunito';
+            }
+        </style>
+        <!-- TODO: Complete this project :) -->
+    </head>
+    <body>
+        <div class="navbar-header navbar navbar-inverse navbar-fixed-top">
+    <div class="container top">
+        <div class="new-collapse">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+            <a class="navbar-brand" href="/">
+              <img class="logo" src="https://studypool-likepluminc.netdna-ssl.com/pictures/logo2.png" style="width:73px;">
+              <img class="logo" src="https://studypool-likepluminc.netdna-ssl.com/pictures/studypool-big.png" id="logo-text">
+            </a>
+            
+            <ul class="nav navbar-nav upp">
+              <li class="dropdown" style="padding-left: 0em;padding-right: 0em;">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-comment"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <div class="menu-inside">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <div style="width: 50%; height: 20px;">
+                        <p style="position: absolute; left: 7px; top: 7px; font-size:12px; font-weight:600; width:200px;">
+                        <span id="inbox_inbox">Inbox </span>
+                        <span id="inbox_requests" style="color:grey; margin-left:5px; font-weight:400;">Requests (Same, css changes)</span>
+                        </p>
+                        </div>
+                      </div>
+                      <div class="panel-body">
+                        Panel content
+                      </div>
+                      <div class="panel-footer">
+                        See all messages
+                      </div>
+                    </div>
+                  </div>
+                </ul>
+              </li>
+              <li class="dropdown" style="padding-left: 0em;padding-right: 0em;">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-globe"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <div class="menu-inside">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title">Same(Css changes)</h3>
+                      </div>
+                      <div class="panel-body">
+                        Panel content
+                      </div>
+                      <div class="panel-footer">
+                        Panel footer
+                      </div>
+                    </div>
+                  </div>
+                </ul>
+              </li>
+              <li class="dropdown" style="padding-left: 0em;padding-right: 0em;">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-usd"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <div class="menu-inside">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title">Payment</h3>
+                      </div>
+                      <div class="panel-body">
+                        Panel content
+                      </div>
+                      <div class="panel-footer" style="color: #434343;">
+                        <span class="glyphicon glyphicon-stats"></span> Balance : $0.00
+                        <br>
+                        <span class="glyphicon glyphicon-download-alt"></span> Pending : $0.00
+                      </div>
+                    </div>
+                  </div>
+                </ul>
+              </li>
+            </ul>
+            
+            <ul class="nav navbar-nav navbar-right">
+              
+                <li id="learn">
+                  <a href="https://www.studypool.com/user/profile/tutorpanel">
+                      Tutor Panel
+                  </a>
+                </li>
+              
+                <li id="learn">
+                  
+                  <a href="https://www.studypool.com/questions/newest">
+                    Questions
+                  </a>
+                  
+                </li>
+                <li id="login"><a  href="/studenthome" >
+                 
+                  username
+                
+                </a></li>
+                <li class="active"  id="down" >
+                  
+                    <div class="dropdown">
+                      <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                        <span class="glyphicon glyphicon-circle-arrow-down">
+                      </a>
+                      <ul class="dropdown-menu" id="down-content" role="menu" aria-labelledby="dropdownMenu1">
+                        <li role="presentation" style="color: black;">Add the needed lines</li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">
+                        <span class="glyphicon glyphicon-list"></span>
+                        Account Settings
+                        </a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">
+                        <span class="glyphicon glyphicon-question-sign"></span>
+                        Learn more</a>
+                        </li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">
+                        <span class="glyphicon glyphicon-comment"></span>
+                        Contact Us</a>
+                        </li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">
+                        <span class="glyphicon glyphicon-off"></span>
+                        Logout</a>
+                        </li>
+                      </ul>
+                    </div>
+                  
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Balance popover -->
+<div id="balance_content_wrapper" style="display: none">
+  <div class="row highlight align">
+    <h4>Balance</h4>
+  </div>
+  <div class="row highlight align">
+    <h4>Pending</h4>
+  </div>
+</div>
+
+<!-- Login modal -->
+<div class="modal fade" id="myLogin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Login to StudyPool</h4>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-2 col-sm-offset-1">
+              <a href="studenthome"> Login as Student </a>
+            </div>
+            <div class="col-sm-2">
+              <a href="tutorhome"> Login as Tutor </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SignUp modal -->
+<div class="modal fade" id="mySignUp" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Login to StudyPool</h4>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <form class="form-signin">
+            <h2 class="form-signin-heading">Please sign in (css changes)</h2>
+            <label for="inputEmail" class="sr-only">Email address</label>
+            <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
+            <label for="inputPassword" class="sr-only">Password</label>
+            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="remember-me"> Remember me
+              </label>
+            </div>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+        <div class="container-fluid main">
+            
+<div class="container" style="height:100%;
+  background-color: white;
+  width: 76%;">
+  <div class="page-header">
+  	<a href="/" id="q" style="color:inherit;">
+  	<p style="color: #cccccc;"><span class="glyphicon glyphicon-circle-arrow-left" style="font-size: 2em;"></span>
+  	All Questions
+  	</p>
+  	</a>
+	<h2> Question Title. 
+	<div class="btn-group pull-right">
+	<a class="signup-button bid dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
+	<span class="glyphicon glyphicon-th-list"></span>
+	</a>
+		<ul class="dropdown-menu" role="menu">
+			<li><a href="#">Make Private</a></li>
+		    <li><a data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Supplement</a></li>
+		    <li class="divider"></li>
+		    <li><a href="#">Withdraw</a></li>
+	  	</ul>
+	</div>
+	</h2> 
+  </div>
+  	<div class="panel panel-default">
+	  <div class="panel-heading">
+	    <h3 class="panel-title">The question itself (Some CSS changes)</h3>
+	  </div>
+	  <div class="panel-body">
+	    <div class="row">
+	    	<div class="col-sm-4 col-sm-offset-2">
+				<div class="panel panel-default">
+				  <div class="panel-body">
+				    <div class="row">
+				    	<div class="col-sm-10">
+				    		Budget: $1.00 - $2.00
+				    	</div>
+				    	<div class="col-sm-2">
+				    		<a href="questionstudent"><span class="glyphicon glyphicon-pencil"></span></a>
+				    	</div>
+				    </div>
+				  </div>
+				</div>
+	    	</div>
+	    	<div class="col-sm-4">
+	    		<div class="panel panel-default">
+				  <div class="panel-body">
+				    <div class="row">
+				    	<div class="col-sm-10">
+				    		Need in: 3 days
+				    	</div>
+				    	<div class="col-sm-2">
+							<a href="questionstudent"><span class="glyphicon glyphicon-pencil"></span></a>
+				    	</div>
+				    </div>
+				  </div>
+				</div>
+	    	</div>
+	    </div>
+	    <div class="row" style="text-align: center;">
+	    <p>
+	    	"Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?"
+	    </p>
+	    </div>
+	  </div>
+	  <a class="qfooter" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+	  <div class="panel-footer" style="text-align: center;">Add a Comment</div>
+	  </a>
+	</div>
+	<div class="collapse" id="collapseExample">
+	  <div class="well" style="height: 100%;">
+	    <h2 style="margin-top:0px;">Add a comment (Submitting comments easier) Once pressed, refresh the page, showing the updated version.</h2>
+	    <form class="form-horizontal" role="form">
+		    <div class="form-group">
+		      <div class="col-sm-12">
+		        <textarea class="form-control" rows="6" placeholder="Please imput any clarifications about the question." required></textarea>
+		      </div>
+		    </div>
+		    <div class="form-group">
+		    <a type="submit" class="signup-button pull-right small-sign" data-toggle="collapse" href="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Submit</a>
+		    </div>
+		</form>
+	  </div>
+	</div>
+	<div class="row second-header">
+	<h2> Bids (3) <small>
+	<a href="#" id="btn1" class="hoverable" data-toggle="popover" title="" 
+	data-content="Bids are submitted by Studypool tutors as requests to answer your question. Select a tutor and pay a downpayment of the requested price to get started. This downpayment is held securely by Studypool until the answer to your question has been completed and approved by you. If the final answer is unsatisfactory, we will refund your downpayment." 
+	data-original-title="Tutor Bids">
+	<span class="glyphicon glyphicon-question-sign"></span></a>
+	</small>
+	<div class="btn-group pull-right">
+		<a class="signup-button bid" data-toggle="modal" data-target="#myInvite">
+		Invite Tutors
+		</a>
+	</div>
+	</h2>
+	</div>
+	<div class="panel panel-default">
+	  <div class="panel-heading">
+	    <h3 class="panel-title">Bid</h3>
+	  </div>
+	  <div class="panel-body">
+	    Panel content
+	  </div>
+	</div>
+	<div class="panel panel-default">
+	  <div class="panel-heading">
+	    <h3 class="panel-title">Bid</h3>
+	  </div>
+	  <div class="panel-body">
+	    Panel content
+	  </div>
+	</div>
+	<div class="panel panel-default">
+	  <div class="panel-heading">
+	    <h3 class="panel-title">Bid</h3>
+	  </div>
+	  <div class="panel-body">
+	    Panel content
+	  </div>
+	</div>
+	<hr>
+	<div class="row" style="text-align:center;">
+		<h1>Footer</h1>
+	</div>
+</div>
+
+<!-- Invite a Tutor Modal -->
+<div class="modal fade" id="myInvite" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Your Tutors</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-primary">Invite</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+        </div>
+        <script src="//code.jquery.com/jquery.min.js"></script>
+        <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="/public/js/main.min.js"></script>
+    </body>
+</html>

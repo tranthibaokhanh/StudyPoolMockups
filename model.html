@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Model Example : Mixture + Bootstrap</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="/public/css/main.css" rel="stylesheet" type="text/css" media="all"/>
+        <style>
+            body {
+                
+                background-color: #ededed;
+                
+                padding-top: 50px;
+                font-family: Avenir, 'Avenir LT', 'Nunito';
+            }
+        </style>
+        <!-- TODO: Complete this project :) -->
+    </head>
+    <body>
+        <div class="navbar-header navbar navbar-inverse navbar-fixed-top">
+    <div class="container top">
+        <div class="new-collapse">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+            <a class="navbar-brand" href="/">
+              <img class="logo" src="https://studypool-likepluminc.netdna-ssl.com/pictures/logo2.png" style="width:73px;">
+              <img class="logo" src="https://studypool-likepluminc.netdna-ssl.com/pictures/studypool-big.png" id="logo-text">
+            </a>
+            
+            <ul class="nav navbar-nav upp">
+              <li class="dropdown" style="padding-left: 0em;padding-right: 0em;">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-comment"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <div class="menu-inside">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <div style="width: 50%; height: 20px;">
+                        <p style="position: absolute; left: 7px; top: 7px; font-size:12px; font-weight:600; width:200px;">
+                        <span id="inbox_inbox">Inbox </span>
+                        <span id="inbox_requests" style="color:grey; margin-left:5px; font-weight:400;">Requests (Same, css changes)</span>
+                        </p>
+                        </div>
+                      </div>
+                      <div class="panel-body">
+                        Panel content
+                      </div>
+                      <div class="panel-footer">
+                        See all messages
+                      </div>
+                    </div>
+                  </div>
+                </ul>
+              </li>
+              <li class="dropdown" style="padding-left: 0em;padding-right: 0em;">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-globe"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <div class="menu-inside">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title">Same(Css changes)</h3>
+                      </div>
+                      <div class="panel-body">
+                        Panel content
+                      </div>
+                      <div class="panel-footer">
+                        Panel footer
+                      </div>
+                    </div>
+                  </div>
+                </ul>
+              </li>
+              <li class="dropdown" style="padding-left: 0em;padding-right: 0em;">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false"><span class="glyphicon glyphicon-usd"></span></a>
+                <ul class="dropdown-menu" role="menu">
+                  <div class="menu-inside">
+                    <div class="panel panel-default">
+                      <div class="panel-heading">
+                        <h3 class="panel-title">Payment</h3>
+                      </div>
+                      <div class="panel-body">
+                        Panel content
+                      </div>
+                      <div class="panel-footer" style="color: #434343;">
+                        <span class="glyphicon glyphicon-stats"></span> Balance : $0.00
+                        <br>
+                        <span class="glyphicon glyphicon-download-alt"></span> Pending : $0.00
+                      </div>
+                    </div>
+                  </div>
+                </ul>
+              </li>
+            </ul>
+            
+            <ul class="nav navbar-nav navbar-right">
+              
+                <li id="learn">
+                  <a href="https://www.studypool.com/user/profile/tutorpanel">
+                      Tutor Panel
+                  </a>
+                </li>
+              
+                <li id="learn">
+                  
+                  <a href="https://www.studypool.com/questions/newest">
+                    Questions
+                  </a>
+                  
+                </li>
+                <li id="login"><a  href="/studenthome" >
+                 
+                  username
+                
+                </a></li>
+                <li class="active"  id="down" >
+                  
+                    <div class="dropdown">
+                      <a class="dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-expanded="true">
+                        <span class="glyphicon glyphicon-circle-arrow-down">
+                      </a>
+                      <ul class="dropdown-menu" id="down-content" role="menu" aria-labelledby="dropdownMenu1">
+                        <li role="presentation" style="color: black;">Add the needed lines</li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">
+                        <span class="glyphicon glyphicon-list"></span>
+                        Account Settings
+                        </a></li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">
+                        <span class="glyphicon glyphicon-question-sign"></span>
+                        Learn more</a>
+                        </li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">
+                        <span class="glyphicon glyphicon-comment"></span>
+                        Contact Us</a>
+                        </li>
+                        <li role="presentation"><a role="menuitem" tabindex="-1" href="#">
+                        <span class="glyphicon glyphicon-off"></span>
+                        Logout</a>
+                        </li>
+                      </ul>
+                    </div>
+                  
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Balance popover -->
+<div id="balance_content_wrapper" style="display: none">
+  <div class="row highlight align">
+    <h4>Balance</h4>
+  </div>
+  <div class="row highlight align">
+    <h4>Pending</h4>
+  </div>
+</div>
+
+<!-- Login modal -->
+<div class="modal fade" id="myLogin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Login to StudyPool</h4>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-2 col-sm-offset-1">
+              <a href="studenthome"> Login as Student </a>
+            </div>
+            <div class="col-sm-2">
+              <a href="tutorhome"> Login as Tutor </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SignUp modal -->
+<div class="modal fade" id="mySignUp" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Login to StudyPool</h4>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <form class="form-signin">
+            <h2 class="form-signin-heading">Please sign in (css changes)</h2>
+            <label for="inputEmail" class="sr-only">Email address</label>
+            <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
+            <label for="inputPassword" class="sr-only">Password</label>
+            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="remember-me"> Remember me
+              </label>
+            </div>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+        <div class="container-fluid main">
+            
+	<div class="hero-unit">
+		<h1>Model</h1>
+		<h2>A basic example.</h2>
+		<p>List populated from the model:</p>
+		<ol>
+			
+  				<li><a href="http://twitter.com/@neiltak">Neil Kinnish</a></li>
+			
+  				<li><a href="http://twitter.com/@mikekus">Mike Kus</a></li>
+			
+  				<li><a href="http://twitter.com/@petetak">Pete Nelson</a></li>
+			
+		</ol>
+		<ul>
+			
+				<li>Physics questions and concepts about acceleration</li>
+			
+				<li>Acceleration and decreased mass</li>
+			
+				<li>Maslow's hierarchy of needs</li>
+			
+				<li>Legislative process of a bill becoming a law in California</li>
+			
+				<li>Marketing channels and companies</li>
+			
+				<li>Different styles of managment</li>
+			
+				<li>Need explanation for finding limits</li>
+			
+				<li>Elements of ...</li>
+			
+		</ul>
+		<p>Todays date: 23 April 2015. Model created: 11.14.2012</p>
+	</div>
+
+        </div>
+        <script src="//code.jquery.com/jquery.min.js"></script>
+        <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="/public/js/main.min.js"></script>
+    </body>
+</html>

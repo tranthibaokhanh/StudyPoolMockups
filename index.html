@@ -1,0 +1,453 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Online Tutoring</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="/bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all"/>
+        <link href="/public/css/main.css" rel="stylesheet" type="text/css" media="all"/>
+        <style>
+            body {
+                
+                background-color: #ededed;
+                
+                padding-top: 50px;
+                font-family: Avenir, 'Avenir LT', 'Nunito';
+            }
+        </style>
+        <!-- TODO: Complete this project :) -->
+    </head>
+    <body>
+        <div class="navbar-header navbar navbar-inverse navbar-fixed-top">
+    <div class="container top">
+        <div class="new-collapse">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+            <a class="navbar-brand" href="/">
+              <img class="logo" src="https://studypool-likepluminc.netdna-ssl.com/pictures/logo2.png" style="width:73px;">
+              <img class="logo" src="https://studypool-likepluminc.netdna-ssl.com/pictures/studypool-big.png" id="logo-text">
+            </a>
+            
+            <ul class="nav navbar-nav navbar-right">
+              
+                <li id="learn">
+                  <a href="https://www.studypool.com/user/profile/tutorpanel">
+                      Tutor Panel
+                  </a>
+                </li>
+              
+                <li id="learn">
+                  
+                  <a href="https://www.studypool.com/howitworks">
+                    Learn More
+                  </a>
+                  
+                </li>
+                <li id="login"><a  data-toggle="modal" data-target="#myLogin">
+                
+                  Login
+                
+                </a></li>
+                <li class="active"  id="signup" >
+                  
+                    <a data-toggle="modal" data-target="#mySignUp">
+                        Sign Up
+                    </a>
+                  
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+<!-- Balance popover -->
+<div id="balance_content_wrapper" style="display: none">
+  <div class="row highlight align">
+    <h4>Balance</h4>
+  </div>
+  <div class="row highlight align">
+    <h4>Pending</h4>
+  </div>
+</div>
+
+<!-- Login modal -->
+<div class="modal fade" id="myLogin" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Login to StudyPool</h4>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-2 col-sm-offset-1">
+              <a href="studenthome"> Login as Student </a>
+            </div>
+            <div class="col-sm-2">
+              <a href="tutorhome"> Login as Tutor </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- SignUp modal -->
+<div class="modal fade" id="mySignUp" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Login to StudyPool</h4>
+      </div>
+      <div class="modal-body">
+        <div class="container">
+          <form class="form-signin">
+            <h2 class="form-signin-heading">Please sign in (css changes)</h2>
+            <label for="inputEmail" class="sr-only">Email address</label>
+            <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required="" autofocus="">
+            <label for="inputPassword" class="sr-only">Password</label>
+            <input type="password" id="inputPassword" class="form-control" placeholder="Password" required="">
+            <div class="checkbox">
+              <label>
+                <input type="checkbox" value="remember-me"> Remember me
+              </label>
+            </div>
+            <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+        <div class="container-fluid main">
+            
+	<div class="starter-template">
+		<div class="container main-ad">
+			<h1 class="headline">Make money by helping students online<br>Become a Studypool Tutor</h1>
+			<div class="links">
+				<div class="row first-row">	
+					<div class="col-sm-3 col-sm-offset-3 signup-div">
+						<a class="signup-button">Sign Up Now</a>
+					</div>
+					<div class="col-sm-3" id="rest">
+						<div class="row">
+							<div class="col-sm-4">
+								<a id="or">or</a>
+							</div>
+							<div class="col-sm-8" id="learn-div">
+								<a id="learn-button">Learn More</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row second-row">
+					Simply answer students academic questions and get paid.
+				</div>
+			</div>
+		</div>
+		<div class="whitebar">
+			<div class="container wb-container">
+				<div class="row" id="three">
+					<div class="col-sm-4">
+						<div class="col-sm-2 small">
+							1
+						</div>
+						<div class="col-sm-10 large">
+							<div class="large-l">
+								Browse Questions
+							</div>
+							<div class="large-s">
+								By specific subjects
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="col-sm-2 small">
+							2
+						</div>
+						<div class="col-sm-10 large">
+							<div class="large-l">
+								Help Students
+							</div>
+							<div class="large-s">
+								Explain & answer questions
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="col-sm-2 small">
+							3
+						</div>
+						<div class="col-sm-10 large">
+							<div class="large-l">
+								Get Paid
+							</div>
+							<div class="large-s">
+								By happy students
+							</div>
+						</div>
+					</div>
+				</div>
+			</div> 
+		</div>
+	</div>
+	<div class="scrollableArea">
+		<a href="#" id="left-button"><img src="left-button.jpg" /></a>
+		<div id="content">
+		</div>
+		<a href="#" id="right-button"><img src="right-button.jpg" /></a>
+	</div>
+	<div class="container recentQuestions">
+		<h1> Recent Questions from Students </h1>
+		<br>
+		<ul class="list-group">
+			
+				<a class="list-group-item" href=www.google.com>
+					<div class="row">
+						<div class="col-sm-8">
+							Physics questions and concepts about acceleration
+							<p id="days">5 days left</p>
+						</div>
+						<div class="col-sm-2 budget">
+							$30 - $50
+							<br>
+							<p id="days">budget range</p>
+						</div>
+						<div class="col-sm-1 bids">
+							4
+							<br>
+							<p id="days">bids</p>
+						</div>
+						<div class="col-sm-2">
+						</div>
+					</div>
+				</a>
+			
+				<a class="list-group-item" href=www.google.com>
+					<div class="row">
+						<div class="col-sm-8">
+							Acceleration and decreased mass
+							<p id="days">5 days left</p>
+						</div>
+						<div class="col-sm-2 budget">
+							$30 - $50
+							<br>
+							<p id="days">budget range</p>
+						</div>
+						<div class="col-sm-1 bids">
+							6
+							<br>
+							<p id="days">bids</p>
+						</div>
+						<div class="col-sm-2">
+						</div>
+					</div>
+				</a>
+			
+				<a class="list-group-item" href=www.google.com>
+					<div class="row">
+						<div class="col-sm-8">
+							Maslow's hierarchy of needs
+							<p id="days">5 days left</p>
+						</div>
+						<div class="col-sm-2 budget">
+							$30 - $50
+							<br>
+							<p id="days">budget range</p>
+						</div>
+						<div class="col-sm-1 bids">
+							10
+							<br>
+							<p id="days">bids</p>
+						</div>
+						<div class="col-sm-2">
+						</div>
+					</div>
+				</a>
+			
+				<a class="list-group-item" href=www.google.com>
+					<div class="row">
+						<div class="col-sm-8">
+							Legislative process of a bill becoming a law in California
+							<p id="days">5 days left</p>
+						</div>
+						<div class="col-sm-2 budget">
+							$30 - $50
+							<br>
+							<p id="days">budget range</p>
+						</div>
+						<div class="col-sm-1 bids">
+							7
+							<br>
+							<p id="days">bids</p>
+						</div>
+						<div class="col-sm-2">
+						</div>
+					</div>
+				</a>
+			
+				<a class="list-group-item" href=www.google.com>
+					<div class="row">
+						<div class="col-sm-8">
+							Marketing channels and companies
+							<p id="days">5 days left</p>
+						</div>
+						<div class="col-sm-2 budget">
+							$30 - $50
+							<br>
+							<p id="days">budget range</p>
+						</div>
+						<div class="col-sm-1 bids">
+							2
+							<br>
+							<p id="days">bids</p>
+						</div>
+						<div class="col-sm-2">
+						</div>
+					</div>
+				</a>
+			
+				<a class="list-group-item" href=www.google.com>
+					<div class="row">
+						<div class="col-sm-8">
+							Different styles of managment
+							<p id="days">5 days left</p>
+						</div>
+						<div class="col-sm-2 budget">
+							$30 - $50
+							<br>
+							<p id="days">budget range</p>
+						</div>
+						<div class="col-sm-1 bids">
+							5
+							<br>
+							<p id="days">bids</p>
+						</div>
+						<div class="col-sm-2">
+						</div>
+					</div>
+				</a>
+			
+				<a class="list-group-item" href=www.google.com>
+					<div class="row">
+						<div class="col-sm-8">
+							Need explanation for finding limits
+							<p id="days">5 days left</p>
+						</div>
+						<div class="col-sm-2 budget">
+							$30 - $50
+							<br>
+							<p id="days">budget range</p>
+						</div>
+						<div class="col-sm-1 bids">
+							11
+							<br>
+							<p id="days">bids</p>
+						</div>
+						<div class="col-sm-2">
+						</div>
+					</div>
+				</a>
+			
+				<a class="list-group-item" href=www.google.com>
+					<div class="row">
+						<div class="col-sm-8">
+							Elements of ...
+							<p id="days">5 days left</p>
+						</div>
+						<div class="col-sm-2 budget">
+							$30 - $50
+							<br>
+							<p id="days">budget range</p>
+						</div>
+						<div class="col-sm-1 bids">
+							2
+							<br>
+							<p id="days">bids</p>
+						</div>
+						<div class="col-sm-2">
+						</div>
+					</div>
+				</a>
+			
+		</ul>
+		<br>
+		<div id="signup-div2">
+			<a class="signup-button" id="secondSignup">Sign Up!</a>
+		</div>
+	</div>
+	<div class="more">
+		<div class="container">
+			<h1> How does it Work? </h1>
+			<div class="row more-row">
+				<div class="col-sm-6">
+					<h3>1. Create a profile</h3>
+					<p>Sign up for Studypool as a tutor. Fill out your profile with information about your academic experience and add a profile picture. Students review your profile before working with you so make sure to represent yourself well, in way that will make you stand out. Filling out a profile will take less then 3 minutes.</p>
+				</div>
+				<div class="col-sm-5 col-sm-offset-1">
+					<img src="https://www.studypool.com/pictures/1tutorg.png" style="width: 100%">
+				</div>
+			</div>
+			<hr class="section-divider">
+			<div class="row more-row">
+				<div class="col-sm-6">
+					<h3>2. Help students</h3>
+					<p>Start by bidding on questions you're interested in answering. If the student would like to work with you, they will accept your bid and pay you a downpayment of 40% of your offer price. After receiving the downpayment, complete the question and get full payment.</p>
+				</div>
+				<div class="col-sm-5 col-sm-offset-1">
+					<img src="https://www.studypool.com/pictures/2tutorg.png" style="width: 100%">
+				</div>
+			</div>
+			<hr class="section-divider">
+			<div class="row more-row">
+				<div class="col-sm-6">
+					<h3>3. Earn Money!</h3>
+					<p>Everybody loves money. At studypool we focus on making sure that that we help maximize your earnings. Whether it's our "Tutor Tipping" system which allows students to tip their tutors or our very low 20% commission, we have your covered! We send out payments via Paypal (credit card or bank transfer) or check through mail within 5 days of balance withdrawal.</p>
+				</div>
+				<div class="col-sm-5 col-sm-offset-1">
+					<img src="https://www.studypool.com/pictures/4tutorg.png" style="width: 100%">
+				</div>
+			</div>
+			<hr class="section-divider">
+			<div class="row more-row">
+				<div class="col-sm-6">
+					<h3>4. Build an network</h3>
+					<p>Increase your earning potential by building a network. Studypool's one-of-a-kind friendship system helps you establish your own professional network of students. The bigger your network the more money you'll make as your students question will supply you with a consistent amount of paid work.</p>
+				</div>
+				<div class="col-sm-5 col-sm-offset-1">
+					<img src="https://www.studypool.com/pictures/3tutor.png" style="width: 100%">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="cred">
+		<div class="container">
+			<div class="row" style="margin-top: 1em;">
+				<div class="col-sm-4 down">
+					<img src="https://www.studypool.com/pictures/tc-transparent.png" style="width: 100%">
+				</div>
+				<div class="col-sm-4" style="text-align: center;">
+					<img src="https://www.studypool.com/pictures/500logo.png" style="width: 70%">
+				</div>
+				<div class="col-sm-4 down">
+					<img src="https://www.studypool.com/pictures/Hype.png" style="width: 100%">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="extra">
+	</div>
+
+        </div>
+        <script src="//code.jquery.com/jquery.min.js"></script>
+        <script src="/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="/public/js/main.min.js"></script>
+    </body>
+</html>
